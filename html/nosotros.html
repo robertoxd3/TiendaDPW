@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+  <title>Repuestos y accesorios</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../css/sweetalert2.min.css">
+  <script src="../js/popper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/animate.min.css" />
+</head>
+
+<body class="fixed-sn dark-theme-background">
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav dark-theme-background">
+      <ul class="custom-scrollbar list-unstyled components">
+        <!-- Logo -->
+        <li class="navLogo" id="navLogo" data-wow-duration="0.5s">
+          <div class="container text-center logo">
+            <div class="container circleLogo">
+              <div class="avatar py-4"></div>
+            </div>
+          </div>
+        </li>
+        <!-- Logo -->
+        <!-- Side navigation links -->
+        <li class="nav-item mt-2" id="navInicio" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="Inicio.html">
+            <img loading="lazy" src="../img/home.png" class="nav-img">
+            Inicio
+          </a>
+        </li>
+        <li class="nav-item mt-2" id="navCarrito" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="compra.html">
+            <img loading="lazy" src="../img/cart.png" class="nav-img">
+            Mi carrito
+          </a>
+        </li>
+        <li class="nav-item mt-2" id="navNosotros" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="nosotros.html">
+            <img loading="lazy" src="../img/us.png" class="nav-img">
+            Sobre nosotros
+          </a>
+        </li>
+        <li class="nav-item mt-2" id="navSesion" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="../index.html">
+            <img loading="lazy" src="../img/logout.png" class="nav-img">
+            Cerrar sesión
+          </a>
+        </li>
+        <li class="close" id="closeNav">
+          <a class="text-white" href="#">
+            <i class="far fa-times-circle fa-2x"></i>
+          </a>
+        </li>
+        <!-- Side navigation links -->
+      </ul>
+    </div>
+    <!-- Sidebar navigation -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+      <a href="#" class="d-block" id="sidebar">
+        <i class="fas fa-bars fa-15x text-white"></i>
+      </a>
+      <a class="navbar-brand d-none d-sm-none d-md-block ml-3" href="Inicio.html">
+        RentaCar
+      </a>
+      <ul class="nav nav-flex-icons ml-auto">
+
+        <!-- Dropdown -->
+        <li class="nav-item active">
+          <a class="nav-link" href="promociones.html">
+              <img loading="lazy" src="../img/productos24.png" width="27px" height="auto"> 
+              <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Promociones</span> 
+          </a>
+      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i>
+              <img loading="lazy" width="30px" height="30px" src="../img/pedro-castillo.png" class="avatar-radius">
+            </i>
+            <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Pedro
+              Castillo</span></a>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dark-theme-text wow slideInDown" data-wow-duration="0.3s"
+            aria-labelledby="userDropdown">
+            <a class="dropdown-item text-white" href="usuario.html">Editar Perfil</a>
+            <a class="dropdown-item text-white" href="../index.html">Cerrar sesión</a>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <!--Main Navigation-->
+
+  <!-- Main layout -->
+  <main>
+
+    <div class="container">
+
+      <section class="text-center wow fadeIn" data-wow-duration="2s">
+
+        <!-- Section heading -->
+        <h1 class="my-5 h1">¡Calidad a tu alcance!</h1>
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-4 p-3">
+            <i class="fas fa-4x pink-text"> <img class="wow zoomIn animated vision-img" src="../img/vision-logo.png">
+            </i>
+            <h4 class="font-weight-bold my-4 pt-4">Visión</h4>
+            <p class="grey-text mb-0">Ser reconocida como la empresa líder en la comercialización de repuestos y
+              accesorios para vehículos con altos índices de calidad y servicio, manteniéndonos a la vanguardia en la
+              tecnología satisfaciendo las necesidades y expectativas de nuestros clientes.</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-4">
+
+            <i class="fas fa-4x cyan-text wow zoomIn animated">
+              <img src="../img/mision.png" class="wow zoomIn animated mision-img"></i>
+
+            <h4 class="font-weight-bold my-4">Misión</h4>
+            <p class="grey-text mb-0">Somos una empresa dedicada a atender las necesidades de repuestos y accesorios en
+              el mercado automotor a través de una excelente atención al cliente y con repuestos de calidad que
+              garanticen el buen funcionamiento de su vehículo. </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-4">
+            <i class="fas fa-4x indigo-text">
+              <img class="wow zoomIn animated valores-img" src="../img/valores.png">
+            </i>
+            <h4 class="font-weight-bold my-4">Valores</h4>
+            <p class="grey-text mb-0"> Integridad <br>
+              Responsabilidad <br>
+              Honestidad <br>
+              Tolerancia <br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+        <div class="col-md-12 py-5">
+          <h1 class="my-5 h1">Nuestras instalaciones</h1>
+          <p class="grey-text">Repuestos y Accesorios JP cuenta con amplias infraestructura para brindarle una
+            experiencia única y agradable con personal altamente capacitado.</p>
+          <!-- PRODUCTOS -->
+          <div class="row animated wow fadeIn" style="flex-direction: row; -webkit-box-orient: horizontal">
+            <div class="col" style="width: 50%">
+              <div class="card-deck">
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal1">
+                    <img class="wow fadeIn animated" src="../img/instalacion1.jpeg" width="100%">
+                  </a>
+                  <h6 style="padding-top: 2%; padding-left: 2%; font-size: 18px; color: black;">Espacio para su vehículo
+                  </h6>
+                  <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion1.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal2">
+                    <img class="wow fadeIn animated" src="../img/instalacion2.jpeg" width="100%">
+                  </a>
+                  <h6 style="padding-top: 2%; padding-left: 2%; font-size: 18px; color: black;">Área 4x4</h6>
+                  <div class="modal fade" id="myModal2">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion2.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="width: 50%">
+              <div class="card-deck">
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal3">
+                    <img class="wow fadeIn animated" src="../img/instalacion9.jpeg" width="100%">
+                  </a>
+                  <h6 style="padding-top: 2%; padding-left: 2%; font-size: 18px; color: black;">Todo tipo de accesorios
+                  </h6>
+                  <div class="modal fade" id="myModal3">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion9.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal4">
+                    <img class="wow fadeIn animated" src="../img/instalacion11.jpeg" width="100%">
+                  </a>
+                  <h6 style="padding-top: 2%; padding-left: 2%; font-size: 18px; color: black;">Atención al cliente</h6>
+                  <div class="modal fade" id="myModal4">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion11.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p class="grey-text">Además cuenta con una amplia sala de espera la cual contiene: Aire acondicionado, baño,
+            televisión con cable, Wifi, café y muchas cosas más…</p>
+          <!-- PRODUCTOS -->
+          <div class="row" style="flex-direction: row; -webkit-box-orient: horizontal">
+            <div class="col" style="width: 50%">
+              <div class="card-deck">
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal5">
+                    <img class="wow fadeIn animated" src="../img/instalacion3.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal5">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion3.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal6">
+                    <img class="wow fadeIn animated" src="../img/instalacion7.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal6">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion7.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="width: 50%">
+              <div class="card-deck">
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal7">
+                    <img class="wow fadeIn animated" src="../img/instalacion5.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal7">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion5.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal8">
+                    <img class="wow fadeIn animated" src="../img/instalacion4.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal8">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion4.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 py-5">
+          <p class="grey-text">Personal capacitado en instalaciones de repuestos y accesorios</p>
+          <!-- PRODUCTOS -->
+          <div class="row" style="flex-direction: row; -webkit-box-orient: horizontal">
+            <div class="col" style="width: 50%">
+              <div class="card-deck">
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal9">
+                    <img class="wow fadeIn animated" src="../img/instalacion6.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal9">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion6.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal10">
+                    <img class="wow fadeIn animated" src="../img/instalacion8.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal10">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion8.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="width: 50%">
+              <div class="card-deck">
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal11">
+                    <img class="wow fadeIn animated" src="../img/instalacion10.jpeg" width="100%">
+                  </a>
+                  <div class="modal fade" id="myModal11">
+                    <div class="modal-dialog modal-sm modal-lg modal-md">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="wow fadeIn animated" src="../img/instalacion10.jpeg"
+                            style="width: 100%; height: auto">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center">
+                  <a href="" data-toggle="modal" data-target="#myModal12">
+                    <img class="wow fadeIn animated" src="../img/instalacion12.jpeg" width="100%">
+                    <div class="modal fade" id="myModal12">
+                      <div class="modal-dialog modal-sm modal-lg modal-md">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img class="wow fadeIn animated" src="../img/instalacion12.jpeg"
+                              style="width: 100%; height: auto">
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card content -->
+
+        <!-- Google map -->
+        <div class="col-md-12 py-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.732866446072!2d-89.2810199851456!3d13.674000802775605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632e511f372dd3%3A0x3fe0c1447718b059!2sEscuela%20Especializada%20en%20Ingenier%C3%ADa%20ITCA%20FEPADE!5e0!3m2!1ses-419!2ssv!4v1621571254756!5m2!1ses-419!2ssv"
+            width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+  <!-- Main layout -->
+
+  <!-- Footer -->
+  <footer class="page-footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+          <h6 class="text-white">CUENTA</h6>
+          <a href="compra.html" class="text-white">Mis ordenes</a>
+        </div>
+        <div class=" col-6 col-sm-6 col-md-3 mt-3">
+
+          <h6 class="text-white">INFORMACION</h6>
+          <a href="nosotros.html" class="text-white">Sobre Nosotros</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+          <h6 class="text-white">NUESTRAS OFERTAS</h6>
+          <a href="Inicio.html" class="text-white">Nuevos productos</a>
+        </div>
+        <div id="socialMedia" class="col-6 col-sm-6 col-md-3 mt-3 mb-3">
+
+          <h6 class="text-white">REDES SOCIALES </h6>
+          <a href="#"><img class="logos" src="../img/facebook.png" title="facebook" alt="facebook" /></a>
+          <a href="#" title="Whatsapp" alt="Whatsapp"><img src="../img/whatsapp.png" class="logos"></a>
+          <a href="#"><img class="logos" src="../img/instagram.png" title="Instagram" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/funciones.js"></script>
+  <script src="../js/sweetalert2.min.js"></script>
+  <!-- WOW Js -->
+  <script src="../js/wow.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new WOW().init();
+    })
+  </script>
+</body>
+
+</html>

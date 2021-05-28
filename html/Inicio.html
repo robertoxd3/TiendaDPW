@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <title>Repuestos y accesorios</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/animate.min.css" />
+</head>
+
+<body class="fixed-sn dark-theme-background">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav dark-theme-background">
+            <ul class="custom-scrollbar list-unstyled components">
+                <!-- Logo -->
+                <li class="navLogo" id="navLogo" data-wow-duration="0.5s">
+                    <div class="container text-center logo">
+                        <div class="container circleLogo">
+                            <div class="avatar py-4"></div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Logo -->
+                <!-- Side navigation links -->
+                <li class="nav-item mt-2" id="navInicio" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="Inicio.html">
+                        <img loading="lazy" src="../img/home.png" class="nav-img">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item mt-2" id="navCarrito" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="compra.html">
+                        <img loading="lazy" src="../img/cart.png" class="nav-img">
+                        Mi carrito
+                    </a>
+                </li>
+                <li class="nav-item mt-2" id="navNosotros" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="nosotros.html">
+                        <img loading="lazy" src="../img/us.png" class="nav-img">
+                        Sobre nosotros
+                    </a>
+                </li>
+                <li class="nav-item mt-2" id="navSesion" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="../index.html">
+                        <img loading="lazy" src="../img/logout.png" class="nav-img">
+                        Cerrar sesión
+                    </a>
+                </li>
+                <li class="close" id="closeNav">
+                    <a class="text-white" href="#">
+                        <i class="far fa-times-circle fa-2x"></i>
+                    </a>
+                </li>
+                <!-- Side navigation links -->
+            </ul>
+        </div>
+        <!-- Sidebar navigation -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="d-block" id="sidebar">
+                <i class="fas fa-bars fa-15x text-white"></i>
+            </a>
+            <a class="navbar-brand d-none d-sm-none d-md-block ml-3" href="Inicio.html">
+                RentaCar
+            </a>
+            <ul class="nav nav-flex-icons ml-auto">
+
+                <!-- Dropdown -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="promociones.html">
+                        <img loading="lazy" src="../img/productos24.png" width="27px" height="auto"> 
+                        <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Promociones</span> 
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i>
+                            <img loading="lazy" src="../img/cart.png" width="27px" height="auto">
+                        </i>
+                        <span class="clearfix d-none d-md-inline-block dropdown-title text-white"> Mi Carrito</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dark-theme-text wow slideInDown"
+                        data-wow-duration="0.3s" aria-labelledby="navbarDropdownMenuLink" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <tbody></tbody>
+                            <tr class="ml-3">
+                                <td scope="col">
+                                    <p class="text-white pb-0 mb-0">TOTAL: </p>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p id="total" class=" mt-0 pt-0 text-white mb-0"></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn btn-success btn-block btn-car">Vaciar
+                            carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-info btn-block btn-car">Realizar
+                            compra</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i>
+                            <img loading="lazy" width="30px" height="30px" src="../img/pedro-castillo.png"
+                                class="avatar-radius">
+                        </i>
+                        <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Pedro
+                            Castillo</span></a>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dark-theme-text wow slideInDown"
+                        data-wow-duration="0.3s" aria-labelledby="userDropdown">
+                        <a class="dropdown-item text-white" href="usuario.html">Editar Perfil</a>
+                        <a class="dropdown-item text-white" href="../index.html">Cerrar sesión</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Section: Introduction -->
+    <section id="intro" class="intro text-center">
+        <div class="overlay">
+            <div class="intro-content">
+                <h1 class="animated fadeInDown delay-05s">Bienvenido a RentaCar</strong>
+                </h1>
+                <p class="subtexto animated fadeInUp delay-05s">Alquila tu coche ideal cerca de ti</p>
+                <a href="#inicio"><i class="fas fa-angle-down fa-4x text-white"></i> </a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Main layout -->
+    <main id="inicio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 form-inline mt-3">
+                    <h6 class="text-white mt-2">Visitas del día de hoy: </h6>
+                    <span class="text-white ml-2" id="idVisitas"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-header px-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos</p>
+        </div>
+        <!-- PRODUCTOS -->
+        <ul id="productos"></ul>
+        <div class="container" id="lista-productos">
+            <div class="col-md-12" align="center">
+                <div class="row border rounded bg-gray">
+                    <h4 class="pt-20 pl-3 text-black">
+                        <img loading="lazy" src="../img/hot.png" class="img-oferta">
+                        Nuevos productos
+                    </h4>
+                    <div id="carousel" class="carousel slide container-fluid rounded" data-ride="carousel"
+                        height="450px">
+                        <div class="carousel-inner" align="center">
+                            <div class="column-fluid">
+                                <div class="carousel-item pb-20 active" data-interval="4000" align="center"
+                                    height="425px">
+                                    <div class="card shadow-sm">
+                                        <div class="card-title">
+                                            <h4 class="my-0 font-weight-bold text-black pt-20">
+                                                Kia Sportage 2015 </h4>
+                                        </div>
+                                        <div>
+                                            <div class="container">
+                                                <img loading="lazy" class="wow fadeIn animated"
+                                                    src="../img/camioneta1.jpg" height="120px">
+                                            </div>
+                                            <h1
+                                                class="card-title text-black pricing-card-title precio font-weight-bold">
+                                                $ <span class="">90</span>
+                                            </h1>
+                                            <ul class="list-unstyled text-black">
+                                                <li>- Transmisión automatica</li>
+                                                <li> - Pasajeros 5</li>
+                                                <li>- 4 puertas</li>
+                                            </ul>
+                                            <div class="row-fluid">
+                                                <div class="container">
+                                                    <div class="col-md-4 pb-3 d-inline-flex">
+                                                        <label class="text-black mr-3">Cantidad: </label>
+                                                        <input type="number" class="form-control cantidad" min="1"
+                                                            value="1" id="cantidad">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="btn btn-primary agregar-carrito mb-3" data-id="14">Agregar
+                                                al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item pb-20" data-interval="4000" align="center" height="425px">
+                                    <div class="card shadow-sm">
+                                        <div class="card-title">
+                                            <h4 class="my-0 font-weight-bold text-black pt-20">
+                                                Mitsubishi Outlander 2017 </h4>
+                                        </div>
+                                        <div>
+                                            <div class="container">
+                                                <img loading="lazy" height="120px" src="../img/camioneta2.jpg">
+                                            </div>
+                                            <h1
+                                                class="card-title text-black pricing-card-title precio font-weight-bold">
+                                                $ <span class="">75.00</span>
+                                            </h1>
+                                            <ul class="list-unstyled text-black">
+                                                <li>- Transmisión automatica</li>
+                                                <li> - Pasajeros 5</li>
+                                                <li>- 4 puertas</li>
+                                            </ul>
+                                            <div class="row-fluid">
+                                                <div class="container">
+                                                    <div class="col-md-4 pb-3 d-inline-flex">
+                                                        <label class="text-black mr-3">Cantidad: </label>
+                                                        <input type="number" class="form-control cantidad" min="1"
+                                                            value="1" id="cantidad">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="btn btn-primary agregar-carrito mb-3" data-id="13">Agregar
+                                                al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                    <span aria-hidden="true"><img loading="lazy" src="../img/left.png"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                    <span aria-hidden="true"><img loading="lazy" src="../img/right.png"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul></ul>
+            <!-- Fin de carousel -->
+            <!-- FIN DE PRODUCTOS -->
+        </div>
+
+        <!-- Inicio Categoria -->
+        <div class="wrap mt-5">
+            <h1>Vehiculos Disponibles</h1>
+            <div class="producto-wrapper">
+                <div class="category_list">
+                    <a href="javascript:void(0);" class="category_item ml-1" category="all">Todos</a>
+                    <a href="javascript:void(0);" class="category_item ml-1" category="sedan">Sedan</a>
+                    <a href="javascript:void(0);" class="category_item ml-1" category="pickup">Pick Up</a>
+                    <a href="javascript:void(0);" class="category_item ml-1" category="camioneta">Camioneta</a>
+                    <a href="javascript:void(0);" class="category_item ml-1" category="van">Van</a>
+                    <a href="javascript:void(0);" class="category_item ml-1" category="mini">Mini</a>
+                    <a href="javascript:void(0);" class="category_item ml-1" category="deportivo">Deportivo</a>
+                </div>
+                <section class="products-list">
+
+                    <div class="product-item" category="sedan">
+                        <a href="producto1.html"><img src="../img/kia.jpg" alt=""></a>
+                        <a href="producto1.html" class="productosLink">Kia rio 2015</a>
+                    </div>
+
+                    <div class="product-item" category="sedan">
+                        <a href="producto2.html"><img src="../img/mazda.jpg" alt=""></a>
+                        <a href="producto2.html" class="productosLink">Mazda 3 2016</a>
+                    </div>
+
+                    <div class="product-item" category="pickup">
+                        <a href="producto3.html"><img src="../img/pickup1.jpg" alt=""></a>
+                        <a href="producto3.html" class="productosLink">Isuzu-D max</a>
+                    </div>
+
+                    <div class="product-item" category="pickup">
+                        <a href="producto4.html"><img src="../img/pickup2.jpg" alt=""></a>
+                        <a href="producto4.html" class="productosLink">Mitsubishi sportero 2017</a>
+                    </div>
+
+                    <div class="product-item" category="camioneta">
+                        <a href="producto5.html"><img src="../img/camioneta1.jpg" alt=""></a>
+                        <a href="producto5.html" class="productosLink">Kia Sportage 2015</a>
+                    </div>
+
+                    <div class="product-item" category="camioneta">
+                        <a href="producto6.html"><img src="../img/camioneta2.jpg" alt=""></a>
+                        <a href="producto6.html" class="productosLink">Mitsubishi Outlander 2017</a>
+                    </div>
+
+                    <div class="product-item" category="van">
+                        <a href="producto7.html"><img src="../img/van1.jpg" alt=""></a>
+                        <a href="producto7.html" class="productosLink">Toyota HiAce</a>
+                    </div>
+
+                    <div class="product-item" category="van">
+                        <a href="producto8.html"><img src="../img/van2.jpg" alt=""></a>
+                        <a href="producto8.html" class="productosLink">Nissan Urvan</a>
+                    </div>
+
+                    <div class="product-item" category="mini">
+                        <a href="producto9.html"><img src="../img/mini1.jpg" alt=""></a>
+                        <a href="producto9.html" class="productosLink">Chevrolet Beat</a>
+                    </div>
+
+                    <div class="product-item" category="mini">
+                        <a href="producto10.html"><img src="../img/mini2.jpg" alt=""></a>
+                        <a href="producto10.html" class="productosLink">Kia Picanto 2015</a>
+                    </div>
+
+                    <div class="product-item" category="deportivo">
+                        <a href="producto11.html"><img src="../img/deportivo1.jpg" alt=""></a>
+                        <a href="producto11.html" class="productosLink">Mercedes-Benz S550</a>
+                    </div>
+
+                    <div class="product-item" category="deportivo">
+                        <a href="producto12.html"><img src="../img/deportivo2.jpg" alt=""></a>
+                        <a href="producto12.html" class="productosLink">Porsche Boxster 2017</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Fin de categorias -->
+
+        <!-- Grid Categorias 
+        <div class="container">
+            <h1 class="text-center">Categorías</h1>
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-12 col-lg-6 grid mt-3">
+                    <div class="card-deck">
+                        <div class="card text-center">
+                            <h6 class="title-grid mb-2">Sedan</h8>
+                                <a href="sedan.html"><img loading="lazy" src="../img/audio.jpg" class="img"></a>
+                        </div>
+                        <div class="card text-center">
+                            <h6 class="pt-20 text-black ft-sz-14">Pick Up
+                            </h6>
+                            <a href="accesorios.html"><img loading="lazy" src="../img/accesorios.jpg" class="img"></a>
+                        </div>
+                        <div class="card text-center">
+                            <h6 class="title-grid">Camioneta</h6>
+                            <a href="alternadores.html"><img loading="lazy" src="../img/25.jpg" class="img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-12 col-md-12 col-lg-6 grid mt-3">
+                    <div class="card-deck">
+                        <div class="card text-center">
+                            <h6 class="title-grid">Van</h6>
+                            <a href="alarmas.html"><img loading="lazy" src="../img/alarmas.jpg" class="img"></a>
+                        </div>
+                        <div class="card text-center">
+                            <h6 class="title-grid">Mini</h6>
+                            <a href="luces.html"><img loading="lazy" src="../img/luces.jpg" class="img"></a>
+                        </div>
+                        <div class="card text-center">
+                            <h6 class="title-grid">Deportivo</h6>
+                            <a href="4x4.html"><img loading="lazy" src="../img/accesorios.jpg" class="img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Fin de categorias -->
+
+    </main>
+    <!-- Main layout -->
+
+    <!-- Footer -->
+    <footer class="page-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <h6 class="text-white">CUENTA</h6>
+                    <a href="compra.html" class="text-white">Mis ordenes</a>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-3 mt-3">
+
+                    <h6 class="text-white">INFORMACION</h6>
+                    <a href="nosotros.html" class="text-white">Sobre Nosotros</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <h6 class="text-white">NUESTRAS OFERTAS</h6>
+                    <a href="Inicio.html" class="text-white">Nuevos productos</a>
+                </div>
+                <div id="socialMedia" class="col-6 col-sm-6 col-md-3 mt-3 mb-3">
+
+                    <h6 class="text-white">REDES SOCIALES </h6>
+                    <a href="#"><img loading="lazy" class="logos" src="../img/facebook.png" title="facebook"
+                            alt="facebook" /></a>
+                    <a href="#" title="Whatsapp" alt="Whatsapp"><img loading="lazy" src="../img/whatsapp.png"
+                            class="logos"></a>
+                    <a href="#"><img loading="lazy" class="logos" src="../img/instagram.png" title="Instagram"
+                            alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- WOW Js -->
+    <script src="../js/wow.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new WOW().init();
+        })
+    </script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/funciones.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pedido.js"></script>
+    <script src="../js/visitas.js"></script>
+    <script src="../js/categorias.js"></script>
+</body>
+
+</html>

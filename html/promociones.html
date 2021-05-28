@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <title>Repuestos y accesorios</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/animate.min.css" />
+</head>
+
+<body class="fixed-sn dark-theme-background">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav dark-theme-background">
+            <ul class="custom-scrollbar list-unstyled components">
+                <!-- Logo -->
+                <li class="navLogo" id="navLogo" data-wow-duration="0.5s">
+                    <div class="container text-center logo">
+                        <div class="container circleLogo">
+                            <div class="avatar py-4"></div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Logo -->
+                <!-- Side navigation links -->
+                <li class="nav-item mt-2" id="navInicio" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="Inicio.html">
+                        <img loading="lazy" src="../img/home.png" class="nav-img">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item mt-2" id="navCarrito" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="compra.html">
+                        <img loading="lazy" src="../img/cart.png" class="nav-img">
+                        Mi carrito
+                    </a>
+                </li>
+                <li class="nav-item mt-2" id="navNosotros" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="nosotros.html">
+                        <img loading="lazy" src="../img/us.png" class="nav-img">
+                        Sobre nosotros
+                    </a>
+                </li>
+                <li class="nav-item mt-2" id="navSesion" data-wow-duration="0.5s">
+                    <a class="nav-link text-white" href="../index.html">
+                        <img loading="lazy" src="../img/logout.png" class="nav-img">
+                        Cerrar sesión
+                    </a>
+                </li>
+                <li class="close" id="closeNav">
+                    <a class="text-white" href="#">
+                        <i class="far fa-times-circle fa-2x"></i>
+                    </a>
+                </li>
+                <!-- Side navigation links -->
+            </ul>
+        </div>
+        <!-- Sidebar navigation -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="d-block" id="sidebar">
+                <i class="fas fa-bars fa-15x text-white"></i>
+            </a>
+            <a class="navbar-brand d-none d-sm-none d-md-block ml-3" href="Inicio.html">
+                RentaCar
+            </a>
+            <ul class="nav nav-flex-icons ml-auto">
+
+                <!-- Dropdown -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="promociones.html">
+                        <img loading="lazy" src="../img/productos24.png" width="27px" height="auto"> 
+                        <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Promociones</span> 
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i>
+                            <img loading="lazy" src="../img/cart.png" width="27px" height="auto">
+                        </i>
+                        <span class="clearfix d-none d-md-inline-block dropdown-title text-white"> Mi Carrito</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dark-theme-text wow slideInDown"
+                        data-wow-duration="0.3s" aria-labelledby="navbarDropdownMenuLink" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <tbody></tbody>
+                            <tr class="ml-3">
+                                <td scope="col">
+                                    <p class="text-white pb-0 mb-0">TOTAL: </p>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p id="total" class=" mt-0 pt-0 text-white mb-0"></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn btn-success btn-block btn-car">Vaciar
+                            carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-info btn-block btn-car">Realizar
+                            compra</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i>
+                            <img loading="lazy" width="30px" height="30px" src="../img/pedro-castillo.png"
+                                class="avatar-radius">
+                        </i>
+                        <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Pedro
+                            Castillo</span></a>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dark-theme-text wow slideInDown"
+                        data-wow-duration="0.3s" aria-labelledby="userDropdown">
+                        <a class="dropdown-item text-white" href="usuario.html">Editar Perfil</a>
+                        <a class="dropdown-item text-white" href="../index.html">Cerrar sesión</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--Main Navigation-->
+    <main class="mt-3">
+        <div class="pricing-header px-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-5 mt-4">Promociones</h1>
+            <p class="lead">Nuevas promociones cada semana!</p>
+        </div>
+
+        <div class="margen-card">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="card-deck">
+                        <div class="card card-profile">
+                            <h4 class="pt-20 pl-3 text-black">
+                                <img loading="lazy" src="../img/hot.png" class="img-oferta">
+                                Isuzu D-Max
+                            </h4>
+                            <img src="../img/pickup1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title titulo-card">Estandar</h5>
+                                <h4 class="card-descripcion">Para los clientes nuevos</h4>
+                                 <p class="card-oldPrice">$800*/mes</p> 
+                                 <p class="card-newPrice">Contratalo por solo $650*/mes</p>
+                         
+                                 <ul class="list-unstyled text-black text-center">
+                                    <li>- Transmisión automatica</li>
+                                    <li> - Pasajeros 5</li>
+                                    <li>- 4 puertas</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Añadido hace 5 dias</small>
+                            </div>
+                        </div>
+
+                        <div class="card card-profile ">
+                            <h4 class="pt-20 pl-3 text-black">
+                                <img loading="lazy" src="../img/hot.png" class="img-oferta">
+                                Nissan Urvan
+                            </h4>
+                            <img src="../img/van2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title titulo-card">Premium</h5>
+                                <h4 class="card-descripcion">Para los clientes mas antiguos</h4>
+                                 <p class="card-oldPrice">$1000*/mes</p> 
+                                 <p class="card-newPrice">Contratalo por solo $600*/mes</p>
+                         
+                                 <ul class="list-unstyled text-black text-center">
+                                    <li>- Transmisión automatica</li>
+                                    <li> - Pasajeros 5</li>
+                                    <li>- 3 puertas</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Añadido hace 1 semana</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</main>
+<!-- Main layout -->
+
+<!-- Footer -->
+<footer class="page-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                <h6 class="text-white">CUENTA</h6>
+                <a href="compra.html" class="text-white">Mis ordenes</a>
+            </div>
+            <div class=" col-6 col-sm-6 col-md-3 mt-3">
+
+                <h6 class="text-white">INFORMACION</h6>
+                <a href="nosotros.html" class="text-white">Sobre Nosotros</a>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                <h6 class="text-white">NUESTRAS OFERTAS</h6>
+                <a href="Inicio.html" class="text-white">Nuevos productos</a>
+            </div>
+            <div id="socialMedia" class="col-6 col-sm-6 col-md-3 mt-3 mb-3">
+
+                <h6 class="text-white">REDES SOCIALES </h6>
+                <a href="#"><img loading="lazy" class="logos" src="../img/facebook.png" title="facebook"
+                        alt="facebook" /></a>
+                <a href="#" title="Whatsapp" alt="Whatsapp"><img loading="lazy" src="../img/whatsapp.png"
+                        class="logos"></a>
+                <a href="#"><img loading="lazy" class="logos" src="../img/instagram.png" title="Instagram"
+                        alt="Instagram" /></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<!-- WOW Js -->
+<script src="../js/wow.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        new WOW().init();
+    })
+</script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/funciones.js"></script>
+<script src="../js/sweetalert2.min.js"></script>
+
+</body>
+
+</html>

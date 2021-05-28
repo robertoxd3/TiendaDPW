@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+  <title>Repuestos y accesorios</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
+  <link rel="stylesheet" href="../css/sweetalert2.min.css">
+  <script src="../js/popper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+</head>
+
+<body class="fixed-sn dark-theme-background">
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav dark-theme-background">
+      <ul class="custom-scrollbar list-unstyled components">
+        <!-- Logo -->
+        <li class="navLogo" id="navLogo" data-wow-duration="0.5s">
+          <div class="container text-center logo">
+            <div class="container circleLogo">
+              <div class="avatar py-4"></div>
+            </div>
+          </div>
+        </li>
+        <!-- Logo -->
+        <!-- Side navigation links -->
+        <li class="nav-item mt-2" id="navInicio" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="Inicio.html">
+            <img loading="lazy" src="../img/home.png" class="nav-img">
+            Inicio
+          </a>
+        </li>
+        <li class="nav-item mt-2" id="navCarrito" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="compra.html">
+            <img loading="lazy" src="../img/cart.png" class="nav-img">
+            Mi carrito
+          </a>
+        </li>
+        <li class="nav-item mt-2" id="navNosotros" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="nosotros.html">
+            <img loading="lazy" src="../img/us.png" class="nav-img">
+            Sobre nosotros
+          </a>
+        </li>
+        <li class="nav-item mt-2" id="navSesion" data-wow-duration="0.5s">
+          <a class="nav-link text-white" href="../index.html">
+            <img loading="lazy" src="../img/logout.png" class="nav-img">
+            Cerrar sesión
+          </a>
+        </li>
+        <li class="close" id="closeNav">
+          <a class="text-white" href="#">
+            <i class="far fa-times-circle fa-2x"></i>
+          </a>
+        </li>
+        <!-- Side navigation links -->
+      </ul>
+    </div>
+    <!-- Sidebar navigation -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+      <a href="#" class="d-block" id="sidebar">
+        <i class="fas fa-bars fa-15x text-white"></i>
+      </a>
+      <a class="navbar-brand d-none d-sm-none d-md-block ml-3" href="Inicio.html">
+        RentaCar
+      </a>
+      <ul class="nav nav-flex-icons ml-auto">
+
+        <!-- Dropdown -->
+        <li class="nav-item active">
+          <a class="nav-link" href="promociones.html">
+              <img loading="lazy" src="../img/productos24.png" width="27px" height="auto"> 
+              <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Promociones</span> 
+          </a>
+      </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i>
+              <img loading="lazy" width="30px" height="30px" src="../img/pedro-castillo.png" class="avatar-radius">
+            </i>
+            <span class="clearfix d-none d-md-inline-block dropdown-title text-white">Pedro
+              Castillo</span></a>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dark-theme-text wow slideInDown" data-wow-duration="0.3s"
+            aria-labelledby="userDropdown">
+            <a class="dropdown-item text-white" href="usuario.html">Editar Perfil</a>
+            <a class="dropdown-item text-white" href="../index.html">Cerrar sesión</a>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <!--Main Navigation-->
+
+  <!-- Main layout -->
+  <main>
+    <div id="content">
+      <!-- Carousel -->
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+            <form id="procesar-pago" action="#">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-4 mb-3">
+                    <div class="col-12 col-md-12">
+                      <label for="cliente" class="col-form-label h2">Cliente:</label>
+                      <input type="text" class="form-control" id="cliente" value="Pedro Castillo">
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 mb-3">
+                    <label for="email" class="col-form-label h2">Correo:</label>
+                    <div class="col-12 col-md-12">
+                      <input type="text" class="form-control" id="correo" value="admin@gmail.com">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="carrito-compra" class="table-responsive">
+                <table class="table" id="lista-compra">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="ft-sz-11">Imagen</th>
+                      <th scope="col" class="ft-sz-11">Nombre</th>
+                      <th scope="col" class="ft-sz-11">Cantidad</th>
+                      <th scope="col" class="ft-sz-11">Subtotal</th>
+                      <th scope="col" class="ft-sz-11">Acciones</th>
+                    </tr>
+
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                  <td colspan="2"></td>
+                  <td scope="col">
+                    <p class="text-white pb-0 mb-0">TOTAL: </p>
+                    </p>
+                  </td>
+                  <td>
+                    <p id="total" class=" mt-0 pt-0 text-white mb-0"></p>
+                  </td>
+                  </tr>
+
+                </table>
+              </div>
+
+              <div class="row justify-content-center" id="loaders">
+                <img id="cargando" src="" width="220">
+              </div>
+
+              <div class="row justify-content-between">
+                <div class="col-md-4 mb-2">
+                  <a href="Inicio.html" class="btn btn-info btn-block">Seguir comprando</a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <a href="Inicio.html" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+  </main>
+  <!-- Main layout -->
+
+  <!-- Footer -->
+  <footer class="page-footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+          <h6 class="text-white">CUENTA</h6>
+          <a href="compra.html" class="text-white">Mis ordenes</a>
+        </div>
+        <div class=" col-6 col-sm-6 col-md-3 mt-3">
+
+          <h6 class="text-white">INFORMACION</h6>
+          <a href="nosotros.html" class="text-white">Sobre Nosotros</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+          <h6 class="text-white">NUESTRAS OFERTAS</h6>
+          <a href="Inicio.html" class="text-white">Nuevos productos</a>
+        </div>
+        <div id="socialMedia" class="col-6 col-sm-6 col-md-3 mt-3 mb-3">
+
+          <h6 class="text-white">REDES SOCIALES </h6>
+          <a href="#"><img class="logos" src="../img/facebook.png" title="facebook" alt="facebook" /></a>
+          <a href="#" title="Whatsapp" alt="Whatsapp"><img src="../img/whatsapp.png" class="logos"></a>
+          <a href="#"><img class="logos" src="../img/instagram.png" title="Instagram" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/funciones.js"></script>
+  <script src="../js/sweetalert2.min.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/compra.js"></script>
+
+</body>
+
+</html>
